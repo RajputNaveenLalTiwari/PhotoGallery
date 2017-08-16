@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.examples.photogallery.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:scrollbars="horizontal">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <GridView
+        android:id="@+id/gridViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numColumns="4"
+        android:layout_above="@+id/recyclerViewID"
+        android:background="@android:color/darker_gray">
+
+    </GridView>
+
+</RelativeLayout>
